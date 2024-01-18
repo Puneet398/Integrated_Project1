@@ -1,0 +1,27 @@
+<script>
+
+function lw(){
+
+var xhr = new XMLHttpRequest();
+
+//alert(cmd)
+
+xhr.onreadystatechange = function() {
+
+var cmd = document.getElementById("in2").value; xhr.open("GET", http://3.110.130.239/cgi-bin/linux_interpreter.py"); xhr.send();
+
+if(this.readyState == 4){
+
+document.getElementById("d1").innerHTML = this.responseText;
+
+}
+
+</script>
+
+<input name="cmd"/>
+
+<button onclick="lw()">Enter</button>
+
+<br/>
+
+<div id="d1"></div>
